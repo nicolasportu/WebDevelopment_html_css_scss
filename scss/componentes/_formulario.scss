@@ -1,0 +1,14 @@
+@import '../base/variables';
+
+.box-contacto {
+    background: $form-box-color;
+    font-family: $fuente;
+    .form-seccion {
+        .item {
+            background: $form-color;
+        }
+        .item2 {
+            background-color: $color-button;
+        }
+    }
+}

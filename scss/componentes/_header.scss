@@ -1,0 +1,16 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/colores';
+
+
+header {
+    nav {
+        background: nth($colores-header, 2);
+        ul {
+            li {
+               font-family: $fuente;     
+            }
+        }
+    }
+}
+

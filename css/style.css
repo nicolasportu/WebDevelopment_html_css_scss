@@ -1,0 +1,21 @@
+.box-contacto {
+  background: linear-gradient(#612897, #2a272c);
+  font-family: "Bebas Neue", cursive;
+}
+.box-contacto .form-seccion .item {
+  background: #612897;
+}
+.box-contacto .form-seccion .item2 {
+  background-color: #a3bb1b;
+}
+
+header nav {
+  background: #612897;
+}
+header nav ul li {
+  font-family: "Bebas Neue", cursive;
+}
+
+/* probando */
+
+/*# sourceMappingURL=style.css.map */
