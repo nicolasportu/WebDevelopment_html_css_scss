@@ -5,12 +5,59 @@
 
 header {
     nav {
-        background: nth($colores-header, 2);
-        ul {
-            li {
-               font-family: $fuente;     
+        padding: 10px;
+        margin: 0 auto;
+        background: linear-gradient(#612897, #2a272c);
+        height: 140px;
+        width: 100%;
+        
+        label.logo {
+            padding: 0px 30px;
+        
+            img {
+                max-height: 200px;
+                max-width: 250px;
             }
         }
-    }
-}
 
+        ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            
+            a {
+                font-family: $fuente;
+                color: nth($colores-header , 7);
+                font-size: $fuente-size-nav;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                list-style: none; 
+            }
+
+            a.activar, a:hover {
+                background: #612897;
+                transition: .5s;
+            }
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+            #check {
+                display: none;
+            }
+               
+    }    
+}

@@ -4,4 +4,13 @@
 @import '../scss/base/colores';
 
 
-/* probando */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    background: url(../images/foto42.png);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}

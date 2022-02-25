@@ -1,11 +1,16 @@
 @import '../base/variables';
+@import '../base/colores';
 
 .box-contacto {
     background: $form-box-color;
     font-family: $fuente;
+    padding: 35px;
+    margin: 15px auto;
+
     .form-seccion {
         .item {
             background: $form-color;
+            
         }
         .item2 {
             background-color: $color-button;
