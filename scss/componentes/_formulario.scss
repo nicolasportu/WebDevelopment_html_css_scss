@@ -1,5 +1,7 @@
 @import '../base/variables';
 @import '../base/colores';
+@import '../base/listas';
+
 
 .box-contacto {
     background: $form-box-color;
@@ -8,6 +10,11 @@
     margin: 15px auto;
 
     .form-seccion {
+
+        .display-1 {
+            @extend %title;
+        }
+        
         .item {
             background: $form-color;
             
