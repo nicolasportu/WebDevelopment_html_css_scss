@@ -1,3 +1,16 @@
+footer .container-footer-all .container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-contacto .form-seccion .display-1 {
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
+  margin-top: 1%;
+  color: #000;
+}
+
 .box-contacto {
   background: linear-gradient(#612897, #2a272c);
   font-family: "Bebas Neue", cursive;
@@ -111,7 +124,7 @@ footer .container-footer-all .container-footer .columna2 .row label {
   margin-top: 10px;
   margin-left: 20px;
   font-size: 20px;
-  color: #c7c7c7;
+  color: white;
 }
 footer .container-footer-all .container-footer .columna2 .row a {
   text-decoration: none;
@@ -135,11 +148,12 @@ footer .container-footer-all .container-footer .columna3 .row2 label {
   margin-left: 20px;
   max-width: 100px;
   font-size: 20px;
-  color: #c7c7c7;
+  color: white;
 }
 footer .container-footer-all .footer {
   width: 100%;
-  background: #101010;
+  background: #000;
+  font-size: 20px;
 }
 footer .container-footer-all .footer .footer1 {
   max-width: 1200px;
@@ -149,7 +163,7 @@ footer .container-footer-all .footer .footer1 {
   padding: 20px;
 }
 footer .container-footer-all .footer .footer1 .copyright {
-  color: #c7c7c7;
+  color: white;
   font-weight: bold;
 }
 
