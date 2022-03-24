@@ -1,0 +1,66 @@
+/* pagina de medios de pago */
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/mixin';
+@import '../base/maps';
+
+
+
+.pagos-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin:  5px auto;
+
+    .pagos-page {
+        width: 70%;
+
+        .pagos-titulo {
+            @extend %title;
+        }
+
+        .page-cuotas {
+            display: flex;
+            font-size: nth($font-size , 6 );
+            border: map-get($section , borde );
+            border-radius: map-get($section , bor-radio );
+            margin: 10px;
+            padding: 15px 5px;
+            cursor: pointer;
+            color: nth($colores-header , 7 );
+            justify-content: center;
+
+            @media screen and (max-width:480px) {
+                color: nth($colores-header , 7 );
+                text-align: center;
+            }
+
+            @media screen and (min-width:481px) and (max-width:980px) {
+                color: nth($colores-header , 6 );
+                text-align: center;
+            }
+        }
+
+        .page-tarjetas {
+            @extend %display-section;
+            font-size: nth($font-size , 6 );
+            border-radius: map-get($section , bor-radio );
+            border: map-get($section , borde-2 );
+            background: linear-gradient(#612897, #2a272c);
+            padding: 15px 5px;
+            margin: 10px;
+            cursor: pointer;
+            color: nth($colores-header , 6 );
+        }
+
+        @media screen and (max-width: 980px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 100%;
+            width: 100%;
+            font-size: nth($font-size, 8 );
+        }
+    }
+}

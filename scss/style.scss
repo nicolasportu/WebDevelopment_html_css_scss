@@ -4,6 +4,7 @@
 @import 'componentes/comprar';
 @import 'componentes/formulario';
 @import 'componentes/tienda';
+@import 'componentes/pagos';
 @import 'base/listas';
 @import 'base/extends';
 @import 'base/mixin';
@@ -14,3 +15,29 @@ body {
     @extend %body;
 }
 
+/* tablet */
+@media screen and (min-width: 481px) and (max-width:980px) {
+    body {
+        background: nth($colores-header , 7);
+        width: 100%;
+        color: nth($colores-header , 6 );
+    }
+}
+
+/* mobile*/
+@media screen and (max-width: 480px) {
+    body {
+        background: rgb(216, 214, 211);
+        width: 100%;
+        color: black;
+    }
+}
+
+@media screen and (min-width:981px) {
+    body {
+        background: url(../images/foto42.png);
+        background-size: 100%;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}

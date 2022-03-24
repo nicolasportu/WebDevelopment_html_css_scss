@@ -7,8 +7,33 @@
     grid-gap: $espacio;
 }
 
+/* foto presentacion de index */
 @mixin transformar ($transf, $transi, $opac) {
     transform: scale(1.2);
     transition: all 300ms;
     opacity: 0.9;
+}
+
+/* carousel de index */
+@mixin carousel {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width:980px) {
+        display: flex;
+        width: 100%;
+
+        .slide img {
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+    }
+}
+/* mixiin para la seccion presentacion */
+@mixin grid-we {
+    display: grid;
+    grid-template-columns: 40% 20%;
+    grid-template-rows: 40% 20% 5% 5%;
+    grid-gap: 1rem;
+    justify-content: center;
 }

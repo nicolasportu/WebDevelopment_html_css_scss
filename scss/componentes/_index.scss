@@ -5,9 +5,7 @@
 @import '../base/maps';
 
 .title-box {
-    @extend %title;
-  
-    
+    @extend %title;    
 }
 
 
@@ -44,6 +42,118 @@
         display: none;
     }
 }
+/* FIN FOTO PRESENTACION PAGINA */
 
+/* CAROUSEL */
+.slider-container {
+    @include carousel;
+    width: 100%;
 
+    .slide {
+        width: 80%;
 
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+/* FIN CAROUSEL */
+
+/* SECCION PRODUCTOS */
+.texto-we {
+    @extend %title;
+}
+
+.container-pre {
+    margin: 0;
+
+    .section-we {
+        @include grid-we;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: all 500ms ease;
+                cursor: pointer;
+            }
+        }
+
+        .ph-grid1 {
+            grid-row: 1 / 3;
+        }
+
+        .ph-grid4 {
+            grid-column: 1 / 3;
+            font-size: nth($font-size , 6 );
+
+            @media screen and(max-width:480px) {
+                font-size: nth($font-size , 10 );
+                margin: 0 auto;
+                text-align: justify;
+            }
+
+            @media screen and (min-width: 481px) and (max-width: 980px) {
+                margin: 2px 15px;
+                text-align: justify;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 2px 2px;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 980px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 2px auto;
+            padding: 3px;
+        }
+    }
+}
+/* FIN SECCION PRODUCTOS */
+
+/* MUSICA PARA SCROLLEAR */
+.title-video {
+    @extend %title;
+}
+
+.section-video {
+    margin: 20px;
+
+    .video {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width:980px) {
+            display: flex;
+            justify-content: center;
+          
+            #youtube {
+                width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+
+    .video-parrafo {
+       text-align: center;
+       font-size: nth($font-size , 5 ); 
+    }
+   
+}
+/* FIN MUSICA PARA SCROLLEAR */

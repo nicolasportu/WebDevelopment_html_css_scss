@@ -3,11 +3,42 @@
 @import '../base/listas';
 @import '../base/extends';
 @import '../base/mixin';
+@import '../base/maps';
 
-.title-tienda {
+.title-comprar {
     @extend %title;
+}
 
-    @media screen {
-        
+.div-flex {
+    display: block;
+    margin: 4%;
+
+    div {
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 6px;
+        padding-top: 10px;
+        margin: 10px;
+        background: linear-gradient(#612897, #2a272c);
+        animation: bounce 3s ease;
+
+        p {
+            font-size: nth($font-size , 6 );
+            color: nth($colores-header, 6 );
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        @media screen and (max-width:980px) {
+            max-width: 90%;
+            flex-wrap: wrap;
+        }
     }
 }

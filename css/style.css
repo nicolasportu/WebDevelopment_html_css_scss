@@ -1,3 +1,5 @@
+/*10*/
+/*10*/
 body {
   padding: 0;
   margin: 0;
@@ -8,12 +10,12 @@ body {
   background-attachment: fixed;
 }
 
-footer .container-footer-all .container-footer {
+footer .container-footer-all .footer .footer1, footer .container-footer-all .container-footer {
   display: flex;
   justify-content: space-between;
 }
 
-.box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+.pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-video, .texto-we, .title-box {
   background: linear-gradient(#612897, #2a272c);
   font-size: 5em;
   display: flex;
@@ -25,17 +27,25 @@ footer .container-footer-all .container-footer {
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-video, .texto-we, .title-box {
     font-size: 35px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-video, .texto-we, .title-box {
     font-size: 50px;
   }
 }
 
+.pagos-container .pagos-page .page-tarjetas {
+  display: flex;
+  justify-content: center;
+}
+
 /* mixin para el grid de la pagina tienda */
+/* foto presentacion de index */
+/* carousel de index */
+/* mixiin para la seccion presentacion */
 /* FOTO PRESENTACION PAGINA */
 .content-welcome {
   display: flex;
@@ -66,6 +76,124 @@ footer .container-footer-all .container-footer {
   }
 }
 
+/* FIN FOTO PRESENTACION PAGINA */
+/* CAROUSEL */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  .slider-container {
+    display: flex;
+    width: 100%;
+  }
+  .slider-container .slide img {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
+.slider-container .slide {
+  width: 80%;
+}
+.slider-container .slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* FIN CAROUSEL */
+/* SECCION PRODUCTOS */
+.container-pre {
+  margin: 0;
+}
+.container-pre .section-we {
+  display: grid;
+  grid-template-columns: 40% 20%;
+  grid-template-rows: 40% 20% 5% 5%;
+  grid-gap: 1rem;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.container-pre .section-we img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease;
+}
+.container-pre .section-we img:hover {
+  transform: scale(1.2);
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+.container-pre .section-we .ph-grid1 {
+  grid-row: 1/3;
+}
+.container-pre .section-we .ph-grid4 {
+  grid-column: 1/3;
+  font-size: 35px;
+}
+@media screen and (max-width: 480px) {
+  .container-pre .section-we .ph-grid4 {
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  .container-pre .section-we .ph-grid4 {
+    margin: 2px 15px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-pre .section-we {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 2px 2px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  .container-pre .section-we {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2px auto;
+    padding: 3px;
+  }
+}
+
+/* FIN SECCION PRODUCTOS */
+/* MUSICA PARA SCROLLEAR */
+.section-video {
+  margin: 20px;
+}
+.section-video .video {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 980px) {
+  .section-video .video {
+    display: flex;
+    justify-content: center;
+  }
+  .section-video .video #youtube {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+.section-video .video-parrafo {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* FIN MUSICA PARA SCROLLEAR */
+/*10*/
+/*10*/
 body {
   padding: 0;
   margin: 0;
@@ -76,12 +204,12 @@ body {
   background-attachment: fixed;
 }
 
-footer .container-footer-all .container-footer {
+footer .container-footer-all .footer .footer1, footer .container-footer-all .container-footer {
   display: flex;
   justify-content: space-between;
 }
 
-.box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+.pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
   background: linear-gradient(#612897, #2a272c);
   font-size: 5em;
   display: flex;
@@ -93,17 +221,25 @@ footer .container-footer-all .container-footer {
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
     font-size: 35px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
     font-size: 50px;
   }
 }
 
+.pagos-container .pagos-page .page-tarjetas {
+  display: flex;
+  justify-content: center;
+}
+
 /* mixin para el grid de la pagina tienda */
+/* foto presentacion de index */
+/* carousel de index */
+/* mixiin para la seccion presentacion */
 /* HEADER */
 header nav {
   padding: 10px;
@@ -117,10 +253,10 @@ header nav {
   /* FIN MEDIA QUERY TABLET */
 }
 header nav .checkbtn {
-  font-size: 30px;
+  font-size: 50px;
   color: white;
   float: right;
-  line-height: 80px;
+  line-height: 100px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
@@ -139,7 +275,7 @@ header nav #check {
     left: 0;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 980px) {
+@media screen and (min-width: 481px) and (max-width: 1119px) {
   header nav header {
     max-width: 100%;
   }
@@ -151,7 +287,7 @@ header nav #check {
   }
 }
 header nav label.logo {
-  padding: 0px 30px;
+  padding: 0px 10px;
   /* MEDIA QUERY MOBILE*/
   /* FIN MEDIA QUERY MOBILE*/
   /* MEDIA QUERY TABLET */
@@ -195,7 +331,7 @@ header nav ul li {
 header nav ul li a {
   font-family: "Bebas Neue", cursive;
   color: #000;
-  font-size: 50px;
+  font-size: 40px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -211,7 +347,7 @@ header nav ul li a a.activar, header nav ul li a:hover {
     position: fixed;
     max-width: 100%;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background: linear-gradient(#2a272c, #612897);
     z-index: 10;
     top: 100px;
@@ -221,18 +357,19 @@ header nav ul li a a.activar, header nav ul li a:hover {
   }
   header nav ul li {
     display: block;
-    margin: 5px 0;
+    margin: 20px 0;
     line-height: 20px;
   }
   header nav ul li a {
-    font-size: 20px;
+    font-size: 26px;
+    flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 980px) {
+@media screen and (min-width: 481px) and (max-width: 1119px) {
   header nav ul {
     position: fixed;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background: linear-gradient(#2a272c, #612897);
     z-index: 10;
     top: 140px;
@@ -246,11 +383,14 @@ header nav ul li a a.activar, header nav ul li a:hover {
     line-height: 30px;
   }
   header nav ul li a {
-    font-size: 19px;
+    font-size: 26px;
+    flex-wrap: wrap;
   }
 }
 
 /* FIN HEADER */
+/*10*/
+/*10*/
 body {
   padding: 0;
   margin: 0;
@@ -261,12 +401,12 @@ body {
   background-attachment: fixed;
 }
 
-footer .container-footer-all .container-footer {
+footer .container-footer-all .footer .footer1, footer .container-footer-all .container-footer {
   display: flex;
   justify-content: space-between;
 }
 
-.box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+.pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
   background: linear-gradient(#612897, #2a272c);
   font-size: 5em;
   display: flex;
@@ -278,20 +418,29 @@ footer .container-footer-all .container-footer {
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
     font-size: 35px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
     font-size: 50px;
   }
 }
 
+.pagos-container .pagos-page .page-tarjetas {
+  display: flex;
+  justify-content: center;
+}
+
+/* mixin para el grid de la pagina tienda */
+/* foto presentacion de index */
+/* carousel de index */
+/* mixiin para la seccion presentacion */
 footer {
-  background: linear-gradient(#612897, #2a272c);
   width: 100%;
-  color: white;
+  background: linear-gradient(#2a272c, #612897);
+  color: #fff;
 }
 footer .container-footer-all {
   width: 100%;
@@ -300,7 +449,6 @@ footer .container-footer-all {
   padding: 40px;
 }
 footer .container-footer-all .container-footer .columna1 {
-  display: flex;
   justify-content: flex-start;
 }
 footer .container-footer-all .container-footer .columna1 img {
@@ -311,11 +459,11 @@ footer .container-footer-all .container-footer .columna2 {
   max-width: 400px;
 }
 footer .container-footer-all .container-footer .columna2 h2 {
-  font-size: 44px;
+  font-size: 30px;
 }
 footer .container-footer-all .container-footer .columna2 .row {
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
 }
 footer .container-footer-all .container-footer .columna2 .row img {
   width: 36px;
@@ -325,7 +473,7 @@ footer .container-footer-all .container-footer .columna2 .row label {
   margin-top: 10px;
   margin-left: 20px;
   font-size: 20px;
-  color: white;
+  color: #c7c7c7;
 }
 footer .container-footer-all .container-footer .columna2 .row a {
   text-decoration: none;
@@ -334,7 +482,7 @@ footer .container-footer-all .container-footer .columna3 {
   max-width: 400px;
 }
 footer .container-footer-all .container-footer .columna3 h2 {
-  font-size: 44px;
+  font-size: 30px;
 }
 footer .container-footer-all .container-footer .columna3 .row2 {
   margin-top: 20px;
@@ -348,27 +496,41 @@ footer .container-footer-all .container-footer .columna3 .row2 label {
   margin-top: 10px;
   margin-left: 20px;
   max-width: 100px;
-  font-size: 35px;
-  color: white;
+  font-size: 20px;
+  color: #c7c7c7;
+}
+@media screen and (max-width: 480px) {
+  footer .container-footer-all .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  footer .container-footer-all .container-footer {
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 40px;
+  }
 }
 footer .container-footer-all .footer {
   width: 100%;
-  background: #000;
-  font-size: 35px;
+  background: #101010;
 }
 footer .container-footer-all .footer .footer1 {
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
 }
 footer .container-footer-all .footer .footer1 .copyright {
-  color: white;
+  color: #c7c7c7;
   font-weight: bold;
 }
 
 /* pagina de como comprar */
+/*10*/
+/*10*/
 body {
   padding: 0;
   margin: 0;
@@ -379,12 +541,12 @@ body {
   background-attachment: fixed;
 }
 
-footer .container-footer-all .container-footer {
+footer .container-footer-all .container-footer, footer .container-footer-all .footer .footer1 {
   display: flex;
   justify-content: space-between;
 }
 
-.box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+.pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
   background: linear-gradient(#612897, #2a272c);
   font-size: 5em;
   display: flex;
@@ -396,17 +558,59 @@ footer .container-footer-all .container-footer {
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
     font-size: 35px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .box-contacto .form-seccion .display-1, .title-tienda, .title-box {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-comprar, .title-box, .texto-we, .title-video {
     font-size: 50px;
   }
+}
+
+.pagos-container .pagos-page .page-tarjetas {
+  display: flex;
+  justify-content: center;
 }
 
 /* mixin para el grid de la pagina tienda */
+/* foto presentacion de index */
+/* carousel de index */
+/* mixiin para la seccion presentacion */
+.div-flex {
+  display: block;
+  margin: 4%;
+}
+.div-flex div {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding-top: 10px;
+  margin: 10px;
+  background: linear-gradient(#612897, #2a272c);
+  animation: bounce 3s ease;
+}
+.div-flex div p {
+  font-size: 35px;
+  color: white;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@media screen and (max-width: 980px) {
+  .div-flex div {
+    max-width: 90%;
+    flex-wrap: wrap;
+  }
+}
+
+/*10*/
+/*10*/
 body {
   padding: 0;
   margin: 0;
@@ -417,12 +621,12 @@ body {
   background-attachment: fixed;
 }
 
-footer .container-footer-all .container-footer {
+footer .container-footer-all .container-footer, footer .container-footer-all .footer .footer1 {
   display: flex;
   justify-content: space-between;
 }
 
-.box-contacto .form-seccion .display-1, .title-box, .title-tienda {
+.pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-box, .texto-we, .title-video, .title-comprar {
   background: linear-gradient(#612897, #2a272c);
   font-size: 5em;
   display: flex;
@@ -434,18 +638,22 @@ footer .container-footer-all .container-footer {
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .box-contacto .form-seccion .display-1, .title-box, .title-tienda {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-box, .texto-we, .title-video, .title-comprar {
     font-size: 35px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .box-contacto .form-seccion .display-1, .title-box, .title-tienda {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .box-contacto .form-seccion .display-1, .title-box, .texto-we, .title-video, .title-comprar {
     font-size: 50px;
   }
 }
 
+.pagos-container .pagos-page .page-tarjetas {
+  display: flex;
+  justify-content: center;
+}
+
 .box-contacto {
-  background: linear-gradient(#612897, #2a272c);
   font-family: "Bebas Neue", cursive;
   padding: 35px;
   margin: 15px auto;
@@ -457,6 +665,8 @@ footer .container-footer-all .container-footer {
   background-color: #a3bb1b;
 }
 
+/*10*/
+/*10*/
 body {
   padding: 0;
   margin: 0;
@@ -467,12 +677,12 @@ body {
   background-attachment: fixed;
 }
 
-footer .container-footer-all .container-footer {
+footer .container-footer-all .container-footer, footer .container-footer-all .footer .footer1 {
   display: flex;
   justify-content: space-between;
 }
 
-.title-box, .title-tienda, .box-contacto .form-seccion .display-1 {
+.pagos-container .pagos-page .pagos-titulo, .title-tienda, .title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1 {
   background: linear-gradient(#612897, #2a272c);
   font-size: 5em;
   display: flex;
@@ -484,17 +694,25 @@ footer .container-footer-all .container-footer {
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .title-box, .title-tienda, .box-contacto .form-seccion .display-1 {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1 {
     font-size: 35px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .title-box, .title-tienda, .box-contacto .form-seccion .display-1 {
+  .pagos-container .pagos-page .pagos-titulo, .title-tienda, .title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1 {
     font-size: 50px;
   }
 }
 
+.pagos-container .pagos-page .page-tarjetas {
+  display: flex;
+  justify-content: center;
+}
+
 /* mixin para el grid de la pagina tienda */
+/* foto presentacion de index */
+/* carousel de index */
+/* mixiin para la seccion presentacion */
 .title-tienda {
   /*media querys*/
 }
@@ -625,6 +843,9 @@ footer .container-footer-all .container-footer {
   }
 }
 
+/* pagina de medios de pago */
+/*10*/
+/*10*/
 body {
   padding: 0;
   margin: 0;
@@ -635,12 +856,12 @@ body {
   background-attachment: fixed;
 }
 
-footer .container-footer-all .container-footer {
+footer .container-footer-all .container-footer, footer .container-footer-all .footer .footer1 {
   display: flex;
   justify-content: space-between;
 }
 
-.title-box, .title-tienda, .box-contacto .form-seccion .display-1 {
+.pagos-container .pagos-page .pagos-titulo, .title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1, .title-tienda {
   background: linear-gradient(#612897, #2a272c);
   font-size: 5em;
   display: flex;
@@ -652,16 +873,149 @@ footer .container-footer-all .container-footer {
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .title-box, .title-tienda, .box-contacto .form-seccion .display-1 {
+  .pagos-container .pagos-page .pagos-titulo, .title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1, .title-tienda {
     font-size: 35px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  .title-box, .title-tienda, .box-contacto .form-seccion .display-1 {
+  .pagos-container .pagos-page .pagos-titulo, .title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1, .title-tienda {
     font-size: 50px;
   }
 }
 
+.pagos-container .pagos-page .page-tarjetas {
+  display: flex;
+  justify-content: center;
+}
+
 /* mixin para el grid de la pagina tienda */
+/* foto presentacion de index */
+/* carousel de index */
+/* mixiin para la seccion presentacion */
+.pagos-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px auto;
+}
+.pagos-container .pagos-page {
+  width: 70%;
+}
+.pagos-container .pagos-page .page-cuotas {
+  display: flex;
+  font-size: 35px;
+  border: 2px solid #612897;
+  border-radius: 6px;
+  margin: 10px;
+  padding: 15px 5px;
+  cursor: pointer;
+  color: #000;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .pagos-container .pagos-page .page-cuotas {
+    color: #000;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  .pagos-container .pagos-page .page-cuotas {
+    color: white;
+    text-align: center;
+  }
+}
+.pagos-container .pagos-page .page-tarjetas {
+  font-size: 35px;
+  border-radius: 6px;
+  border: 2px solid black;
+  background: linear-gradient(#612897, #2a272c);
+  padding: 15px 5px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+}
+@media screen and (max-width: 980px) {
+  .pagos-container .pagos-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    font-size: 26px;
+  }
+}
+
+/*10*/
+/*10*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  background: url(../images/foto42.png);
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+footer .container-footer-all .container-footer, footer .container-footer-all .footer .footer1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1, .title-tienda, .pagos-container .pagos-page .pagos-titulo {
+  background: linear-gradient(#612897, #2a272c);
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1, .title-tienda, .pagos-container .pagos-page .pagos-titulo {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  .title-box, .texto-we, .title-video, .title-comprar, .box-contacto .form-seccion .display-1, .title-tienda, .pagos-container .pagos-page .pagos-titulo {
+    font-size: 50px;
+  }
+}
+
+.pagos-container .pagos-page .page-tarjetas {
+  display: flex;
+  justify-content: center;
+}
+
+/* mixin para el grid de la pagina tienda */
+/* foto presentacion de index */
+/* carousel de index */
+/* mixiin para la seccion presentacion */
+/* tablet */
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  body {
+    background: #000;
+    width: 100%;
+    color: white;
+  }
+}
+/* mobile*/
+@media screen and (max-width: 480px) {
+  body {
+    background: #d8d6d3;
+    width: 100%;
+    color: black;
+  }
+}
+@media screen and (min-width: 981px) {
+  body {
+    background: url(../images/foto42.png);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
