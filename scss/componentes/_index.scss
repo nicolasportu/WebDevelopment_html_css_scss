@@ -1,0 +1,49 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/mixin';
+@import '../base/maps';
+
+.title-box {
+    @extend %title;
+  
+    
+}
+
+
+/* FOTO PRESENTACION PAGINA */
+.content-welcome {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2% auto;
+    position: relative;
+
+    .img-welcome {
+        width: 1000px;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+
+
+        img {
+            width: 100%;
+            transition: all 300ms;
+
+            &:hover {
+                @include transformar (scale(1.2), all 300ms, 0.8);
+            }
+        
+
+        }
+    }
+
+
+    @media screen and (max-width:980px) {
+        display: none;
+    }
+}
+
+
+

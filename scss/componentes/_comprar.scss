@@ -1,0 +1,13 @@
+/* pagina de como comprar */
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/mixin';
+
+.title-tienda {
+    @extend %title;
+
+    @media screen {
+        
+    }
+}
