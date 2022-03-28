@@ -5,10 +5,11 @@
 @import '../base/mixin';
 @import '../base/maps';
 
+/* titulo */
 .title-comprar {
     @extend %title;
 }
-
+/* div de texto */
 .div-flex {
     display: block;
     margin: 4%;

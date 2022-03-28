@@ -1,5 +1,6 @@
 @import '../base/listas';
 
+/* body de todo el sitio */
 %body {
     padding: 0;
     margin: 0;
@@ -10,31 +11,34 @@
     background-attachment: fixed;
 }
 
+/* footer */
 %display-footer {
     display: flex;
     justify-content: space-between;
 }
 
+/* todos los titulos del sitio */
 %title {
-    background: linear-gradient(#612897, #2a272c);
     font-size: 5em;
     display: flex;
     justify-content: center;
     text-align: center;  
     margin-top: 15px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     cursor: pointer;
+    text-decoration: none;
+    color: nth($colores-header , 7 );
 
     @media screen and (max-width: 480px) {
         font-size: nth($font-size , 6 );
+        color: nth($colores-header , 7 );
     }
 
     @media screen and (min-width: 481px) and (max-width:980px) {
         font-size: nth($font-size , 3 );
+        color: nth($colores-header , 7 );
     }
 }
-
+/* seccion de paginas de medios de pago - divs*/
 %display-section {
     display: flex;
     justify-content: center;

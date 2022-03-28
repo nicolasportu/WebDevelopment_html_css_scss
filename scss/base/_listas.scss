@@ -1,14 +1,17 @@
+/* colores */
 $colores-header:
-violet,                             
+rgb(255, 0, 255),                             
 #612897,
 #2a272c,
-red,
-yellow,
-white,
+rgb(255, 0, 0),
+rgb(255, 255, 0),
+#fff,
 #000,
 rgba(40, 46, 46, 0.4),
-linearGradient(#612897,#2a272c);
+#B4A5A5,
+#F0D9FF;
 
+/* tamaños de fuentes */
 $font-size:
 100px,  /*1*/
 60px,   /*2*/

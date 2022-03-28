@@ -18,26 +18,26 @@ body {
 /* tablet */
 @media screen and (min-width: 481px) and (max-width:980px) {
     body {
-        background: nth($colores-header , 7);
-        width: 100%;
-        color: nth($colores-header , 6 );
+        background: nth($colores-header , 9 );
+        width: 100%; 
     }
 }
 
-/* mobile*/
+/* mobile */
 @media screen and (max-width: 480px) {
     body {
-        background: rgb(216, 214, 211);
+        background: nth($colores-header , 10 );
         width: 100%;
-        color: black;
     }
 }
 
+/* desktop */
 @media screen and (min-width:981px) {
     body {
-        background: url(../images/foto42.png);
+        background: url(../images/foto42.svg);
         background-size: 100%;
         background-position: center;
         background-attachment: fixed;
     }
 }
+

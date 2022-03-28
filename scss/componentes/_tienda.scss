@@ -4,28 +4,12 @@
 @import '../base/mixin';
 @import '../base/maps';
 
-
+/* titulo */
 .title-tienda {
     @extend %title;
-    
-    /*media querys*/
-    @media screen and (max-width:480px) {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        font-size: 25px;
-    }
-
-    @media screen and (min-width: 481px) and (max-width:980px) {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        font-size: 30px;
-        }
-
 }
 
+/* grid galeria de tienda*/
 .section-gallery {
     margin-top: 20px;
     width: 100%;
@@ -46,7 +30,7 @@
 
                 .img-gallery {
                     margin: 2px auto;
-                    height: 300px;
+                    max-height: 300px;
                     background-size: cover;
                     background-position: center;
                 }
@@ -86,70 +70,33 @@
         }
 
             /*media querys*/
-           @media screen and (max-width:480px) {
+           @media screen and (max-width:980px)  {
                display: flex;
                flex-wrap: wrap;
+               flex-direction: column;
+               grid-template-columns: 1;
+               margin: 5px;
 
                .grid-gallery {
-                   max-width: 470px;
                    flex-wrap: wrap;
-                   margin: 2px 2px;
-                   padding: 2px;
 
                    div {
-                       width: 100%;
+                       width: 80%;
 
                        .img-title {
-                           display: flex;
-                           flex-wrap: wrap;
-                           font-size: 15px;
-                           justify-content: center;
+                           font-size: nth($font-size , 9 );
                        }
                        
                        p {
-                           font-size: 13px;
-                           justify-content: center;
+                        font-size: nth($font-size , 9 );  
                        }
 
                        button {
-                           font-size: 14px;
+                        font-size: nth($font-size , 8 );
                        }
                    }
                }
            } 
-
-           
-           @media screen and (min-width: 481px) and (max-width:980px) {
-               display: flex;
-               flex-direction: column;
-               flex-wrap: wrap;
-
-               .grid-gallery {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-
-                    div {
-                        width: 60%;
-
-                        .img-title {
-                            display: flex;
-                            flex-wrap: wrap;
-                            font-size: 20px;
-                            justify-content: center;
-                        }
-
-                        p {
-                            font-size: 15px;
-                            justify-content: center;
-                        }
-
-                        button {
-                            font-size: 17px;
-                        }
-                    }
-               }
-           }
         }
 }
 
