@@ -158,6 +158,11 @@
     .video-parrafo {
        text-align: center;
        font-size: nth($font-size , 5 ); 
+
+       @media screen and (max-width: 980px) {
+           text-align: justify;
+           font-size: nth($font-size , 8 );
+       }
     }
    
 }

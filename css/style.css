@@ -207,6 +207,12 @@ footer .container-footer-all .footer .footer1, footer .container-footer-all .con
   text-align: center;
   font-size: 40px;
 }
+@media screen and (max-width: 980px) {
+  .section-video .video-parrafo {
+    text-align: justify;
+    font-size: 26px;
+  }
+}
 
 /* FIN MUSICA PARA SCROLLEAR */
 /* colores */
@@ -1037,14 +1043,14 @@ footer .container-footer-all .container-footer, footer .container-footer-all .fo
 /* tablet */
 @media screen and (min-width: 481px) and (max-width: 980px) {
   body {
-    background: #B4A5A5;
+    background: #D9D7F1;
     width: 100%;
   }
 }
 /* mobile */
 @media screen and (max-width: 480px) {
   body {
-    background: #F0D9FF;
+    background: #F7F7F7;
     width: 100%;
   }
 }
